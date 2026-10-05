@@ -1,0 +1,80 @@
+[global]
+# Configuration globale de l'application
+developmentMode = false
+showWarningOnDirectExecution = false
+showErrorDetails = true
+
+[server]
+# Configuration du serveur Streamlit
+headless = false
+port = 8501
+baseUrlPath = ""
+enableCORS = true
+enableXsrfProtection = true
+maxUploadSize = 200
+maxMessageSize = 200
+enableWebsocketCompression = false
+enableStaticServing = true
+enableXSRFProtection = true
+maxRequestSize = 200
+
+[browser]
+# Configuration du navigateur
+gatherUsageStats = false
+serverAddress = "localhost"
+serverPort = 8501
+
+[theme]
+# Configuration du thème
+base = "dark"
+primaryColor = "#ff6b35"  # Orange pour les accents
+backgroundColor = "#000000"  # Fond noir
+secondaryBackgroundColor = "#111111"  # Fond secondaire
+textColor = "#ffffff"  # Texte blanc
+font = "sans serif"
+
+[logger]
+# Configuration des logs
+level = "info"
+messageFormat = "%(asctime)s.%(msecs)03d UTC - %(name)s - %(levelname)s - %(message)s"
+
+[client]
+# Configuration du client
+showErrorDetails = true
+toolbarMode = "auto"
+showSidebarNavigation = false
+
+[runner]
+# Configuration du runner
+magicEnabled = true
+installTracer = false
+fixMatplotlib = true
+
+[deprecation]
+# Configuration des avertissements de dépréciation
+showPyplotGlobalUse = false
+showFileUploaderEncoding = false
+
+[layout]
+# Configuration de la mise en page
+wideMode = true
+
+[mapbox]
+# Configuration de Mapbox (si utilisé)
+token = ""
+
+[posthog]
+# Configuration PostHog (analytics)
+enabled = false
+
+[s3]
+# Configuration S3 (si utilisé pour le stockage)
+enabled = false
+
+[azure]
+# Configuration Azure (si utilisé)
+enabled = false
+
+[gcp]
+# Configuration Google Cloud Platform (si utilisé)
+enabled = false
